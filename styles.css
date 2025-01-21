@@ -97,7 +97,7 @@ header .contact-info {
 }
 
 header .contact-info p {
-    font-size: 14px;
+    font-size: 17px;
     color: #555;
     margin: 0;
     font-family: 'OnestMedium1602-hint', sans-serif;
@@ -242,17 +242,23 @@ header .contact-info p {
 
 .green-background {
     background-color: #496937;
-    padding: 100px 20px;
-    margin-top: -50px;
+    padding: 100px 0;
     position: relative;
     z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .green-background-content {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
     color: white;
+    padding: 0 20px;
+    width: 100%;
+    position: relative;
 }
 
 .small-images {
@@ -345,29 +351,16 @@ header .contact-info p {
     margin: 0;
 }
 
-.bottom-left-image {
-    margin-top: 20px;
-    margin-left: -555px;
-}
-
-.bottom-left-image img {
-    width: 700px;
-    height: auto;
-    border-radius: 15px;
-}
-
-.image-grid-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-}
-
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 80px;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
 }
 
 .grid-item {
@@ -378,7 +371,7 @@ header .contact-info p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid-item.large {
+.grid-item.wide {
     grid-column: span 2;
 }
 
@@ -404,4 +397,29 @@ header .contact-info p {
 .grid-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-left-image {
+    position: absolute;
+    left: 0;
+    top: 10;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.bottom-left-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.bottom-image {
+    margin-top: -70px;
+    text-align: center;
+}
+
+.bottom-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
