@@ -232,6 +232,12 @@ header .contact-info p {
     min-width: 0;
     object-fit: cover;
     border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .green-background {
@@ -273,15 +279,14 @@ header .contact-info p {
     height: auto;
 }
 
-/* Овальная полоса для "О клинике" */
 .oval-stripe-about {
     display: inline-block;
     padding: 10px 30px;
     border: 2px solid white;
     border-radius: 50px;
     background-color: #496937;
-    margin-bottom: 20px; /* Уменьшен отступ снизу */
-    margin-left: -1645px; /* Смещение влево */
+    margin-bottom: 20px;
+    margin-left: -1645px;
     position: relative;
     z-index: 10;
 }
@@ -293,55 +298,110 @@ header .contact-info p {
     margin: 0;
 }
 
-/* Текст в колонку */
 .text-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выравнивание по левому краю */
+    align-items: flex-start;
     max-width: 800px;
     margin: 0 auto;
-    text-align: left; /* Текст выровнен по левому краю */
+    text-align: left;
 }
 
-/* Стили для текста "Страсть к профессии" */
 .passion-text {
     font-family: var(--passion-font, 'OnestBold1602-hint'), serif;
     font-size: 65px;
     color: white;
-    margin-bottom: -25px; /* Уменьшен отступ снизу */
+    margin-bottom: -25px;
 }
 
-/* Стили для текста "и забота о животных" */
 .care-text {
     font-family: var(--care-font, 'gogol_regular'), sans-serif;
     font-size: 65px;
     color: white;
-    margin-bottom: -45px; /* Уменьшен отступ снизу */
+    margin-bottom: -45px;
 }
 
-/* Стили для текста "Основные принципы" */
 .principles-text {
     font-family: var(--principles-font, 'OnestBold1602-hint'), sans-serif;
     font-size: 65px;
     color: white;
-    margin-bottom: -40px; /* Уменьшен отступ снизу */
+    margin-bottom: -40px;
 }
 
-/* Стили для текста "нашей работы" */
 .our-work-text {
-    font-family: var(--our-work-font, 'OnestBold1602-hint'), sans-serif; /* Возможность менять шрифт */
-    font-size: 65px; /* Возможность менять размер */
+    font-family: var(--our-work-font, 'OnestBold1602-hint'), sans-serif;
+    font-size: 65px;
     color: white;
-    margin-bottom: 20px; /* Уменьшен отступ снизу */
+    margin-bottom: 20px;
 }
 
-/* Стили для описательного текста */
 .description-text {
     font-family: var(--description-font, 'OnestLight1602-hint'), sans-serif;
     font-size: 25px;
     color: white;
     line-height: 1.6;
-    text-align: left; /* Текст выровнен по левому краю */
+    text-align: left;
     max-width: 600px;
     margin: 0;
+}
+
+.bottom-left-image {
+    margin-top: 20px;
+    margin-left: -555px;
+}
+
+.bottom-left-image img {
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.image-grid-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item.large {
+    grid-column: span 2;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.grid-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-family: 'OnestBold1602-hint', sans-serif;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
