@@ -185,9 +185,10 @@ header .contact-info p {
     z-index: 5;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    overflow: hidden;
+    overflow: visible;
     min-height: 80vh;
     width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 .rectangle-content {
@@ -261,4 +262,86 @@ header .contact-info p {
     width: 80px;
     height: 80px;
     cursor: pointer;
+}
+
+.bottom-right-image {
+    position: absolute;
+    right: 10px;
+    bottom: -250px;
+    z-index: 20;
+    width: 200px;
+    height: auto;
+}
+
+/* Овальная полоса для "О клинике" */
+.oval-stripe-about {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: #496937;
+    margin-bottom: 20px; /* Уменьшен отступ снизу */
+    margin-left: -1645px; /* Смещение влево */
+    position: relative;
+    z-index: 10;
+}
+
+.oval-stripe-about h2 {
+    font-family: 'OnestBold1602-hint', serif;
+    font-size: 28px;
+    color: white;
+    margin: 0;
+}
+
+/* Текст в колонку */
+.text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left; /* Текст выровнен по левому краю */
+}
+
+/* Стили для текста "Страсть к профессии" */
+.passion-text {
+    font-family: var(--passion-font, 'OnestBold1602-hint'), serif;
+    font-size: 65px;
+    color: white;
+    margin-bottom: -25px; /* Уменьшен отступ снизу */
+}
+
+/* Стили для текста "и забота о животных" */
+.care-text {
+    font-family: var(--care-font, 'gogol_regular'), sans-serif;
+    font-size: 65px;
+    color: white;
+    margin-bottom: -45px; /* Уменьшен отступ снизу */
+}
+
+/* Стили для текста "Основные принципы" */
+.principles-text {
+    font-family: var(--principles-font, 'OnestBold1602-hint'), sans-serif;
+    font-size: 65px;
+    color: white;
+    margin-bottom: -40px; /* Уменьшен отступ снизу */
+}
+
+/* Стили для текста "нашей работы" */
+.our-work-text {
+    font-family: var(--our-work-font, 'OnestBold1602-hint'), sans-serif; /* Возможность менять шрифт */
+    font-size: 65px; /* Возможность менять размер */
+    color: white;
+    margin-bottom: 20px; /* Уменьшен отступ снизу */
+}
+
+/* Стили для описательного текста */
+.description-text {
+    font-family: var(--description-font, 'OnestLight1602-hint'), sans-serif;
+    font-size: 25px;
+    color: white;
+    line-height: 1.6;
+    text-align: left; /* Текст выровнен по левому краю */
+    max-width: 600px;
+    margin: 0;
 }
