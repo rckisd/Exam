@@ -271,10 +271,10 @@ header .contact-info p {
 }
 
 .arrow-button {
-    width: 80px; /* Размер кнопки */
-    height: 80px; /* Размер кнопки */
-    border-radius: 50%; /* Делаем кнопку круглой */
-    background-color: #496937; /* Цвет фона кнопки */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #496937;
     border: none;
     cursor: pointer;
     display: flex;
@@ -284,7 +284,7 @@ header .contact-info p {
 }
 
 .arrow-button:hover {
-    background-color: #6F8C5F80; /* Цвет фона при наведении */
+    background-color: #6F8C5F80;
 }
 
 .arrow {
@@ -297,11 +297,11 @@ header .contact-info p {
 }
 
 .left .arrow {
-    transform: rotate(135deg); /* Стрелка влево */
+    transform: rotate(135deg);
 }
 
 .right .arrow {
-    transform: rotate(-45deg); /* Стрелка вправо */
+    transform: rotate(-45deg);
 }
 
 .bottom-right-image {
@@ -452,228 +452,325 @@ header .contact-info p {
     border-radius: 15px;
 }
 
-/* Блок с изображением и формой */
 .full-width-image {
-    position: relative; /* Для позиционирования формы внутри */
-    width: 98%; /* Ширина блока */
-    margin: var(--form-image-margin, 0 auto); /* Отступы для изображения */
-    overflow: hidden; /* Скрываем лишнее */
-    top: -60px; /* Смещение вверх или вниз */
+    position: relative;
+    width: 98%;
+    margin: var(--form-image-margin, 0 auto);
+    overflow: hidden;
+    top: -60px;
 }
 
 .form-background {
-    width: 100%; /* Изображение занимает всю ширину */
-    height: auto; /* Сохраняет пропорции */
-    display: block; /* Убирает лишние отступы */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .form-content {
-    position: absolute; /* Абсолютное позиционирование */
-    top: 30%; /* Позиция по вертикали */
-    right: 5%; /* Позиция по горизонтали (справа) */
-    transform: translateY(-50%); /* Центрирование по вертикали */
-    background-color: transparent; /* Прозрачный фон */
-    padding: var(--form-padding, 20px); /* Отступы внутри формы */
-    max-width: 2000px; /* Ширина формы */
-    text-align: left; /* Выравнивание текста слева */
+    position: absolute;
+    top: 35%;
+    right: 4%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: var(--form-padding, 20px);
+    max-width: 2000px;
+    text-align: left;
 }
 
 .form-title {
-    font-size: 80px; /* Увеличенный размер заголовка */
-    color: #333;
+    font-size: 80px;
+    color: #ffffff;
     font-family: var(--form-title-font, 'OnestBold1602-hint', sans-serif);
-    margin-bottom: var(--form-title-margin, 10px); /* Отступ снизу */
+    margin-bottom: var(--form-title-margin, 10px);
 }
 
 .form-subtitle {
-    font-size: var(--form-subtitle-size, 24px); /* Увеличенный размер подзаголовка */
-    color: #555;
+    font-size: 30px;
+    color: #ffffff;
     font-family: var(--form-subtitle-font, 'OnestLight1602-hint', sans-serif);
-    margin-bottom: var(--form-subtitle-margin, 80px); /* Отступ снизу */
+    margin-bottom: var(--form-subtitle-margin, 80px);
 }
 
 .form-fields {
     display: flex;
     flex-direction: column;
-    gap: var(--form-fields-gap, 20px); /* Отступ между элементами */
+    gap: var(--form-fields-gap, 20px);
 }
 
 .form-input {
-    padding: 30px; /* Отступы внутри поля ввода */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 20px; /* Размер текста */
+    padding: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    font-size: 20px;
     font-family: var(--form-input-font, 'OnestRegular1602-hint', sans-serif);
-    background-color: transparent; /* Прозрачный фон */
-    color: #333; /* Цвет текста */
+    background-color: transparent;
+    color: #ffffff;
+    height: 80px;
 }
 
 .form-input::placeholder {
-    color: #777; /* Цвет плейсхолдера */
+    color: #ffffff;
 }
 
 .form-separator {
     width: 100%;
     height: 1px;
-    background-color: #ccc; /* Цвет разделителя */
-    margin: var(--form-separator-margin, 20px 0); /* Отступы сверху и снизу */
+    background-color: #ccc;
+    margin: var(--form-separator-margin, 20px 0);
 }
 
 .form-button {
-    padding: var(--form-button-padding, 20px); /* Отступы внутри кнопки */
-    background-color: #ff8c42; /* Оранжевый цвет кнопки */
+    padding: 0;
+    background-color: #E7632A;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: var(--form-button-font-size, 24px); /* Размер текста кнопки */
-    font-family: var(--form-button-font, 'OnestBold1602-hint', sans-serif);
+    border-radius: 15px;
+    font-size: 24px;
+    font-family: var(--form-button-font, 'OnestMedium1602-hint', sans-serif);
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 100%; /* Кнопка на всю ширину */
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-button:hover {
-    background-color: #e67e22; /* Темнее оранжевый при наведении */
+    background-color: #ff6a00;
 }
 
 .form-disclaimer {
-    font-size: var(--form-disclaimer-font-size, 16px); /* Размер текста */
+    font-size: var(--form-disclaimer-font-size, 16px);
     color: #777;
     font-family: var(--form-disclaimer-font, 'OnestLight1602-hint', sans-serif);
-    margin-top: var(--form-disclaimer-margin, 20px); /* Отступ сверху */
-    text-align: center; /* Центрирование текста */
+    margin-top: var(--form-disclaimer-margin, 20px);
+    text-align: left;
 }
 
 .services-section {
+    margin-top: 60px;
+    text-align: left;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
     display: flex;
     flex-direction: column;
-   align-items: center;
-    padding: 40px 20px;
-   position: relative;
-   overflow-x: auto;
-   }
-   .services-header {
-       text-align: center;
-      margin-bottom: 30px;
-    }
- .services-button {
-     position: absolute;
-     left: 30px;
-      top: 30px;
-     padding: 10px 20px;
-    border: 1px solid white;
-      border-radius: 30px;
-     background-color: transparent;
+    align-items: flex-start;
+}
+
+.oval-stripe-services {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: #496937;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+    align-self: flex-start;
+}
+
+.oval-stripe-services h2 {
+    font-family: var(--services-title-font, 'OnestBold1602-hint'), serif;
+    font-size: 28px;
     color: white;
-     cursor: pointer;
-     transition: all 0.3s ease;
-     font-size: 1rem;
-    font-family: sans-serif;
-    white-space: nowrap;
-  }
-   .services-button:hover {
-     background-color: white;
-      color: black;
-    }
-  .services-title {
-      font-size: 2.5rem;
-      margin-bottom: 5px;
-       font-weight: 400;
-    }
-    .services-title-sub {
-        display: block;
-     font-size: 1.5rem;
-        font-style: italic;
-       margin-top: 5px;
-     }
-    .services-title-desc {
-       font-size: 2.5rem;
-      margin-bottom: 20px;
-      font-weight: 700;
-     }
-   .services-cards {
-     display: flex;
-     justify-content: center;
-     gap: 20px;
-      max-width: 1200px;
-   }
-    .services-card {
-     background-color: rgba(255, 255, 255, 0.05);
-        border-radius: 20px;
-      width: 300px;
-       transition: all 0.3s ease;
-        overflow: hidden;
-       position: relative;
-      height: 350px;
-       }
-    .services-card:hover {
-        transform: translateY(-5px);
-     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-      }
-    .services-image {
-     width: 100%;
-     height: 100%;
-        object-fit: cover;
-       object-position: center;
-        display: block;
-         padding: 0;
-   }
-   .services-card-title {
-      font-size: 1.5rem;
-         font-weight: bold;
-       margin-bottom: 10px;
-          text-align: center;
-           padding: 10px;
-    }
-   .services-arrows{
-     display: flex;
-     gap: 20px;
-     margin-bottom: 0; /* Убрали нижний отступ */
-     position: absolute; /* Добавили абсолютное позиционирование */
-     top: 30px;
-      right: 30px; /* Задали правый отступ */
-     }
-   .services-arrow {
-    /* display: none; Убрали скрытие стрелок */
-         width: 40px;
-      height: 40px;
-       border: none;
-         border-radius: 50%;
-       background-color: rgba(255, 255, 255, 0.1);
-        cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      }
- .services-arrow:hover {
-     background-color: rgba(255, 255, 255, 0.2);
-     }
-   .services-arrow::before {
-       content: '';
-       position: absolute;
-      top: 50%;
-         left: 50%;
-       transform: translate(-50%, -50%);
-        width: 10px;
-        height: 10px;
-        border-top: 2px solid white;
-        border-right: 2px solid white;
-        }
-     .services-arrow-left::before {
-        transform: translate(-50%, -50%) rotate(-135deg);
-   }
-   .services-arrow-right::before {
-          transform: translate(-50%, -50%) rotate(45deg);
-     }
-  .services-all-button {
-     padding: 12px 20px;
-      background-color: #e67e22;
-     border: none;
-     border-radius: 8px;
-     cursor: pointer;
-      color: white;
-     transition: background-color 0.3s ease;
-         font-size: 1rem;
-   }
-  .services-all-button:hover {
-        background-color: #d35400;
-    }
+    margin: 0;
+}
+
+.services-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    width: 45%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.services-line1,
+.services-line2,
+.services-line3,
+.services-line4 {
+    font-family: var(--passion-font, 'OnestBold1602-hint'), serif;
+    font-size: 70px;
+    color: white;
+    margin: 0;
+}
+
+.services-line1 {
+    margin-bottom: -40px;
+}
+
+.services-line2 {
+    font-family: var(--care-font, 'gogol_regular'), sans-serif;
+    margin-bottom: -45px;
+}
+
+.services-line3 {
+    font-family: var(--principles-font, 'OnestBold1602-hint'), sans-serif;
+    margin-bottom: -40px;
+}
+
+.services-line4 {
+    font-family: var(--principles-font, 'OnestBold1602-hint'), sans-serif;
+    margin-bottom: 20px;
+}
+
+.services-image {
+    position: absolute;
+    left: 0;
+    bottom: 50px; /* Регулируйте по необходимости */
+    z-index: 20;
+    transform: translateX(-10%); /* Частично выводим за край */
+}
+
+.services-image img {
+    width: 800px; /* Оптимальный размер */
+    height: auto;
+    filter: drop-shadow(-10px 15px 20px rgba(0,0,0,0.2));
+}
+
+/* Стили для горизонтальных изображений */
+.horizontal-images-container {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 0 20px;
+    margin: 20px 0 0; /* Уменьшил верхний отступ */
+    position: relative;
+    top: 10px; /* Сдвигаем блок вверх */
+}
+
+.image-wrapper {
+    width: 24%;
+    height: 300px; /* Возвращаем исходную высоту */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Поднимаем старое изображение выше новых */
+.services-image {
+    position: relative;
+    z-index: 15;
+    bottom: -120px; /* Корректируем позицию */
+}
+
+/* Стили для горизонтальных изображений */
+.horizontal-images-container {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 0 20px;
+    margin: 80px 0 0;
+    position: relative;
+    z-index: 20; /* Выше старого изображения */
+}
+
+.image-wrapper {
+    width: 24%;
+    height: 400px; /* Увеличиваем высоту */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполнение пространства */
+}
+
+/* Старое изображение под новыми */
+.services-image {
+    position: relative;
+    z-index: 10; /* Ниже новых изображений */
+    margin-top: -100px; /* Поднимаем вверх под блок */
+    text-align: center;
+}
+
+.services-image img {
+    width: 600px; /* Увеличиваем размер */
+    height: auto;
+}
+
+.all-services-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 100px;
+    position: relative;
+    z-index: 25;
+}
+
+.all-services-button {
+    padding: 25px 160px; /* Увеличил боковые отступы */
+    font-size: 28px;
+    color: white;
+    background-color: #E7632A;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'OnestMedium1602-hint', sans-serif;
+    transition: background-color 0.3s ease; /* Убрал анимацию движения */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    min-width: 400px; /* Минимальная ширина кнопки */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Пространство между элементами (если добавите иконку) */
+}
+
+.all-services-button:hover {
+    background-color: #ff6a00;
+    /* Убрал transform: translateY */
+}
+
+/* Стили для кнопок навигации */
+.image-navigation {
+    position: absolute;
+    top: -160px; /* Расположение над изображениями */
+    right: 40px; /* Отступ справа */
+    display: flex;
+    gap: 20px; /* Расстояние между кнопками */
+    z-index: 30; /* Чтобы кнопки были поверх других элементов */
+}
+
+.round-button {
+    width: 80px; /* Размер кнопки */
+    height: 80px;
+    border-radius: 50%; /* Круглая форма */
+    background-color: #496937; /* Основной цвет */
+    border: 2px solid white; /* Белая рамка */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+.round-button:hover {
+    background-color: #6F8C5F; /* Цвет при наведении */
+}
+
+.round-button .arrow {
+    width: 24px;
+    height: 24px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.round-button.left .arrow {
+    transform: rotate(135deg) translate(-2px, 0); /* Стрелка влево */
+}
+
+.round-button.right .arrow {
+    transform: rotate(-45deg) translate(-2px, 0); /* Стрелка вправо */
+}
