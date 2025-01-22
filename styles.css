@@ -63,6 +63,7 @@
 body {
     line-height: 1.6;
     color: #333;
+    background-color: #496937;
 }
 
 .container {
@@ -166,6 +167,7 @@ header .contact-info p {
     gap: 5px;
     width: auto;
     min-width: 300px;
+    transition: background-color 0.3s ease;
 }
 
 .hero-content button:hover {
@@ -180,7 +182,7 @@ header .contact-info p {
 .white-rectangle {
     background-color: white;
     padding: 80px 20px 120px;
-    margin-top: -15px;
+    margin-top: -14px;
     position: relative;
     z-index: 5;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -231,7 +233,7 @@ header .contact-info p {
     height: 100%;
     min-width: 0;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -394,7 +396,7 @@ header .contact-info p {
 .grid-item {
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -621,31 +623,30 @@ header .contact-info p {
 .services-image {
     position: absolute;
     left: 0;
-    bottom: 50px; /* Регулируйте по необходимости */
+    bottom: 50px;
     z-index: 20;
-    transform: translateX(-10%); /* Частично выводим за край */
+    transform: translateX(-10%);
 }
 
 .services-image img {
-    width: 800px; /* Оптимальный размер */
+    width: 800px;
     height: auto;
     filter: drop-shadow(-10px 15px 20px rgba(0,0,0,0.2));
 }
 
-/* Стили для горизонтальных изображений */
 .horizontal-images-container {
     width: 100%;
     display: flex;
     gap: 2%;
     padding: 0 20px;
-    margin: 20px 0 0; /* Уменьшил верхний отступ */
+    margin: 20px 0 0;
     position: relative;
-    top: 10px; /* Сдвигаем блок вверх */
+    top: 10px;
 }
 
 .image-wrapper {
     width: 24%;
-    height: 300px; /* Возвращаем исходную высоту */
+    height: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -654,14 +655,12 @@ header .contact-info p {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Поднимаем старое изображение выше новых */
 .services-image {
     position: relative;
     z-index: 15;
-    bottom: -120px; /* Корректируем позицию */
+    bottom: -120px;
 }
 
-/* Стили для горизонтальных изображений */
 .horizontal-images-container {
     width: 100%;
     display: flex;
@@ -669,12 +668,12 @@ header .contact-info p {
     padding: 0 20px;
     margin: 80px 0 0;
     position: relative;
-    z-index: 20; /* Выше старого изображения */
+    z-index: 20;
 }
 
 .image-wrapper {
     width: 24%;
-    height: 400px; /* Увеличиваем высоту */
+    height: 400px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -683,19 +682,18 @@ header .contact-info p {
 .image-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Заполнение пространства */
+    object-fit: cover;
 }
 
-/* Старое изображение под новыми */
 .services-image {
     position: relative;
-    z-index: 10; /* Ниже новых изображений */
-    margin-top: -100px; /* Поднимаем вверх под блок */
+    z-index: 10;
+    margin-top: -100px;
     text-align: center;
 }
 
 .services-image img {
-    width: 600px; /* Увеличиваем размер */
+    width: 600px;
     height: auto;
 }
 
@@ -709,7 +707,7 @@ header .contact-info p {
 }
 
 .all-services-button {
-    padding: 25px 160px; /* Увеличил боковые отступы */
+    padding: 25px 160px;
     font-size: 28px;
     color: white;
     background-color: #E7632A;
@@ -717,45 +715,43 @@ header .contact-info p {
     border-radius: 15px;
     cursor: pointer;
     font-family: 'OnestMedium1602-hint', sans-serif;
-    transition: background-color 0.3s ease; /* Убрал анимацию движения */
+    transition: background-color 0.3s ease;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    min-width: 400px; /* Минимальная ширина кнопки */
+    min-width: 400px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Пространство между элементами (если добавите иконку) */
+    gap: 15px;
 }
 
 .all-services-button:hover {
     background-color: #ff6a00;
-    /* Убрал transform: translateY */
 }
 
-/* Стили для кнопок навигации */
 .image-navigation {
     position: absolute;
-    top: -160px; /* Расположение над изображениями */
-    right: 40px; /* Отступ справа */
+    top: -160px;
+    right: 40px;
     display: flex;
-    gap: 20px; /* Расстояние между кнопками */
-    z-index: 30; /* Чтобы кнопки были поверх других элементов */
+    gap: 20px;
+    z-index: 30;
 }
 
 .round-button {
-    width: 80px; /* Размер кнопки */
+    width: 80px;
     height: 80px;
-    border-radius: 50%; /* Круглая форма */
-    background-color: #496937; /* Основной цвет */
-    border: 2px solid white; /* Белая рамка */
+    border-radius: 50%;
+    background-color: #496937;
+    border: 2px solid white;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+    transition: background-color 0.3s ease;
 }
 
 .round-button:hover {
-    background-color: #6F8C5F; /* Цвет при наведении */
+    background-color: #6F8C5F;
 }
 
 .round-button .arrow {
@@ -768,13 +764,13 @@ header .contact-info p {
 }
 
 .round-button.left .arrow {
-    transform: rotate(135deg) translate(-2px, 0); /* Стрелка влево */
+    transform: rotate(135deg) translate(-2px, 0);
 }
 
 .round-button.right .arrow {
-    transform: rotate(-45deg) translate(-2px, 0); /* Стрелка вправо */
+    transform: rotate(-45deg) translate(-2px, 0);
 }
-/* Обновленные стили для блока "Специалисты" */
+
 .specialists-section {
     margin-top: 60px;
     padding: 0 20px;
@@ -782,7 +778,7 @@ header .contact-info p {
     z-index: 10;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Оставляем овал слева */
+    align-items: flex-start;
 }
 
 .oval-stripe-specialists {
@@ -794,7 +790,7 @@ header .contact-info p {
     margin-bottom: 20px;
     position: relative;
     z-index: 10;
-    align-self: flex-start; /* Оставляем овал слева */
+    align-self: flex-start;
 }
 
 .oval-stripe-specialists h2 {
@@ -822,8 +818,8 @@ header .contact-info p {
     font-size: 70px;
     color: white;
     margin: 0;
-    text-align: left; /* Текст выравниваем по левому краю */
-    width: 100%; /* Занимает всю ширину родительского блока */
+    text-align: left;
+    width: 100%;
 }
 
 .specialists-line1 {
@@ -840,45 +836,42 @@ header .contact-info p {
     margin-bottom: 20px;
 }
 
-/* Стили для изображения */
 .specialists-image {
-    position: relative; /* Относительное позиционирование */
-    width: 100%; /* Занимает всю ширину блока */
-    width: 1500px; /* Максимальная ширина изображения */
+    position: relative;
+    width: 100%;
+    width: 1500px;
     z-index: 10;
-    margin-top: -50px; /* Отступ сверху */
-    margin-left: -20px; /* Отступ слева */
+    margin-top: -50px;
+    margin-left: -20px;
 }
 
 .specialists-image img {
-    width: 100%; /* Сохраняет оригинальный масштаб */
-    height: auto; /* Сохраняет пропорции */
-    display: block; /* Убирает лишние отступы */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Стили для блока с тремя горизонтальными изображениями */
 .horizontal-images-section {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    z-index: 20; /* Новые изображения выше */
-    padding: -100px 0; /* Отступы сверху и снизу */
-    margin-top: -240px; /* Сдвигаем блок вверх, чтобы наезжал на 1_svg.png */
+    z-index: 20;
+    padding: -100px 0;
+    margin-top: -240px;
 }
 
 .horizontal-images-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Расстояние между изображениями */
+    gap: 20px;
     width: 100%;
-    padding: 0 20px; /* Отступы по бокам */
+    padding: 0 20px;
 }
 
-/* Уточнённые стили для новых изображений */
 .horizontal-images-container .horizontal-image {
-    width: 32%; /* Ширина каждого изображения (3 изображения на всю ширину) */
+    width: 32%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -888,10 +881,9 @@ header .contact-info p {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Стили для .image-wrapper (оставляем без изменений) */
 .image-wrapper {
     width: 24%;
-    height: 400px; /* Увеличиваем высоту */
+    height: 400px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -900,17 +892,16 @@ header .contact-info p {
 .image-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Заполнение пространства */
+    object-fit: cover;
 }
 
-/* Стили для нового изображения, закреплённого у правого края */
 .fixed-right-image {
-    position: absolute; /* Закрепляем изображение */
-    right: 10px; /* Отступ от правого края */
-    bottom: 1055px; /* Отступ от нижнего края */
-    z-index: 30; /* Убедимся, что изображение поверх других элементов */
-    width: 200px; /* Ширина изображения */
-    height: auto; /* Сохраняем пропорции */
+    position: absolute;
+    right: 10px;
+    bottom: 1880px;
+    z-index: 30;
+    width: 200px;
+    height: auto;
 }
 
 .fixed-right-image img {
@@ -918,33 +909,31 @@ header .contact-info p {
     height: auto;
 }
 
-/* Стили для нового изображения на всю ширину */
 .full-width-image-section {
-    width: 98%; /* Занимает всю ширину страницы */
-    margin: 0 auto; /* Центрирование (если нужно) */
-    padding: 20px 0; /* Отступы сверху и снизу */
-    margin-top: 150px; /* Отступ сверху (настрой по своему усмотрению) */
-    position: relative; /* Для позиционирования внутри */
-    z-index: 10; /* Убедимся, что изображение в правильном слое */
+    width: 98%;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-top: 150px;
+    position: relative;
+    z-index: 10;
 }
 
 .full-width-image-section img {
-    width: 100%; /* Занимает всю ширину родительского элемента */
-    height: auto; /* Сохраняет пропорции */
-    display: block; /* Убирает лишние отступы */
-    border-radius: 15px; /* Опционально: скругление углов */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Опционально: тень */
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 35px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для формы внутри нового изображения */
 .form-content-right {
     position: absolute;
-    top: 50%; /* Позиционирование по вертикали */
-    right: 10%; /* Отступ от правого края */
-    transform: translateY(-50%); /* Точное центрирование */
-    background-color: transparent; /* Прозрачный фон */
-    padding: 20px; /* Отступы внутри формы */
-    max-width: 800px; /* Ширина формы */
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: 20px;
+    max-width: 800px;
     text-align: left;
 }
 
@@ -953,15 +942,15 @@ header .contact-info p {
     color: #ffffff;
     font-family: 'OnestBold1602-hint', sans-serif;
     margin-bottom: 80px;
-    line-height: 1.2; /* Уменьшаем межстрочный интервал */
+    line-height: 1.2;
 }
 
 .form-content-right .form-title-now {
-    display: block; /* Переносим на новую строку */
+    display: block;
     font-size: 70px;
-    font-family: 'gogol_regular', sans-serif; /* Другой шрифт */
-    color: #ffffff; /* Оранжевый цвет */
-    margin-top: 5px; /* Отступ сверху */
+    font-family: 'gogol_regular', sans-serif;
+    color: #ffffff;
+    margin-top: 5px;
 }
 
 .form-content-right .form-subtitle {
@@ -974,7 +963,7 @@ header .contact-info p {
 .form-content-right .form-fields {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Расстояние между элементами формы */
+    gap: 15px;
 }
 
 .form-content-right .form-input {
@@ -1019,4 +1008,118 @@ header .contact-info p {
     font-family: 'OnestLight1602-hint', sans-serif;
     margin-top: 10px;
     text-align: left;
+}
+
+footer {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+.contacts-section {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 600px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.contacts-info {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-logo {
+    margin-bottom: 20px;
+}
+
+.contacts-logo-img {
+    max-width: 200px;
+    display: block;
+}
+
+.contacts-address-phone {
+    margin-bottom: -120px;
+    text-align: left;
+}
+
+.contacts-address {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: black;
+    font-family: var(--footer-font, 'OnestRegular1602-hint', sans-serif);
+}
+
+.contacts-phone {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--footer-font, 'OnestMedium1602-hint', sans-serif);
+}
+
+.contacts-phone:hover {
+    color: #E7632A;
+}
+
+.contacts-time {
+    font-size: 1rem;
+    color: #777;
+    font-family: var(--footer-font, 'OnestLight1602-hint', sans-serif);
+}
+
+.contacts-separator {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.contacts-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #777;
+    font-family: var(--footer-font, 'OnestRegular1602-hint', sans-serif);
+}
+
+.contacts-links a {
+    color: #1E1E1E80;
+    text-decoration: none;
+    font-family: var(--footer-font, 'OnestRegular1602-hint', sans-serif);
+}
+
+.contacts-links a:hover {
+    text-decoration: underline;
+}
+
+.contacts-map {
+    flex: 1;
+    position: relative;
+}
+
+.contacts-map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+.small-image-on-map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: auto;
 }
