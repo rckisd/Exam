@@ -205,7 +205,7 @@ header .contact-info p {
     border-radius: 50px;
     background-color: white;
     margin-bottom: 40px;
-    margin-left: -10px;
+    margin-left: 3px;
     position: relative;
     z-index: 10;
 }
@@ -270,10 +270,38 @@ header .contact-info p {
     align-items: center;
 }
 
-.small-images img {
-    width: 80px;
-    height: 80px;
+.arrow-button {
+    width: 80px; /* Размер кнопки */
+    height: 80px; /* Размер кнопки */
+    border-radius: 50%; /* Делаем кнопку круглой */
+    background-color: #496937; /* Цвет фона кнопки */
+    border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #6F8C5F80; /* Цвет фона при наведении */
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left .arrow {
+    transform: rotate(135deg); /* Стрелка влево */
+}
+
+.right .arrow {
+    transform: rotate(-45deg); /* Стрелка вправо */
 }
 
 .bottom-right-image {
@@ -292,7 +320,7 @@ header .contact-info p {
     border-radius: 50px;
     background-color: #496937;
     margin-bottom: 20px;
-    margin-left: -1645px;
+    margin-left: -1610px;
     position: relative;
     z-index: 10;
 }
@@ -423,3 +451,229 @@ header .contact-info p {
     height: auto;
     border-radius: 15px;
 }
+
+/* Блок с изображением и формой */
+.full-width-image {
+    position: relative; /* Для позиционирования формы внутри */
+    width: 98%; /* Ширина блока */
+    margin: var(--form-image-margin, 0 auto); /* Отступы для изображения */
+    overflow: hidden; /* Скрываем лишнее */
+    top: -60px; /* Смещение вверх или вниз */
+}
+
+.form-background {
+    width: 100%; /* Изображение занимает всю ширину */
+    height: auto; /* Сохраняет пропорции */
+    display: block; /* Убирает лишние отступы */
+}
+
+.form-content {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 30%; /* Позиция по вертикали */
+    right: 5%; /* Позиция по горизонтали (справа) */
+    transform: translateY(-50%); /* Центрирование по вертикали */
+    background-color: transparent; /* Прозрачный фон */
+    padding: var(--form-padding, 20px); /* Отступы внутри формы */
+    max-width: 2000px; /* Ширина формы */
+    text-align: left; /* Выравнивание текста слева */
+}
+
+.form-title {
+    font-size: 80px; /* Увеличенный размер заголовка */
+    color: #333;
+    font-family: var(--form-title-font, 'OnestBold1602-hint', sans-serif);
+    margin-bottom: var(--form-title-margin, 10px); /* Отступ снизу */
+}
+
+.form-subtitle {
+    font-size: var(--form-subtitle-size, 24px); /* Увеличенный размер подзаголовка */
+    color: #555;
+    font-family: var(--form-subtitle-font, 'OnestLight1602-hint', sans-serif);
+    margin-bottom: var(--form-subtitle-margin, 80px); /* Отступ снизу */
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: var(--form-fields-gap, 20px); /* Отступ между элементами */
+}
+
+.form-input {
+    padding: 30px; /* Отступы внутри поля ввода */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px; /* Размер текста */
+    font-family: var(--form-input-font, 'OnestRegular1602-hint', sans-serif);
+    background-color: transparent; /* Прозрачный фон */
+    color: #333; /* Цвет текста */
+}
+
+.form-input::placeholder {
+    color: #777; /* Цвет плейсхолдера */
+}
+
+.form-separator {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Цвет разделителя */
+    margin: var(--form-separator-margin, 20px 0); /* Отступы сверху и снизу */
+}
+
+.form-button {
+    padding: var(--form-button-padding, 20px); /* Отступы внутри кнопки */
+    background-color: #ff8c42; /* Оранжевый цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--form-button-font-size, 24px); /* Размер текста кнопки */
+    font-family: var(--form-button-font, 'OnestBold1602-hint', sans-serif);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Кнопка на всю ширину */
+}
+
+.form-button:hover {
+    background-color: #e67e22; /* Темнее оранжевый при наведении */
+}
+
+.form-disclaimer {
+    font-size: var(--form-disclaimer-font-size, 16px); /* Размер текста */
+    color: #777;
+    font-family: var(--form-disclaimer-font, 'OnestLight1602-hint', sans-serif);
+    margin-top: var(--form-disclaimer-margin, 20px); /* Отступ сверху */
+    text-align: center; /* Центрирование текста */
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    padding: 40px 20px;
+   position: relative;
+   overflow-x: auto;
+   }
+   .services-header {
+       text-align: center;
+      margin-bottom: 30px;
+    }
+ .services-button {
+     position: absolute;
+     left: 30px;
+      top: 30px;
+     padding: 10px 20px;
+    border: 1px solid white;
+      border-radius: 30px;
+     background-color: transparent;
+    color: white;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     font-size: 1rem;
+    font-family: sans-serif;
+    white-space: nowrap;
+  }
+   .services-button:hover {
+     background-color: white;
+      color: black;
+    }
+  .services-title {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+       font-weight: 400;
+    }
+    .services-title-sub {
+        display: block;
+     font-size: 1.5rem;
+        font-style: italic;
+       margin-top: 5px;
+     }
+    .services-title-desc {
+       font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+     }
+   .services-cards {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+      max-width: 1200px;
+   }
+    .services-card {
+     background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+      width: 300px;
+       transition: all 0.3s ease;
+        overflow: hidden;
+       position: relative;
+      height: 350px;
+       }
+    .services-card:hover {
+        transform: translateY(-5px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      }
+    .services-image {
+     width: 100%;
+     height: 100%;
+        object-fit: cover;
+       object-position: center;
+        display: block;
+         padding: 0;
+   }
+   .services-card-title {
+      font-size: 1.5rem;
+         font-weight: bold;
+       margin-bottom: 10px;
+          text-align: center;
+           padding: 10px;
+    }
+   .services-arrows{
+     display: flex;
+     gap: 20px;
+     margin-bottom: 0; /* Убрали нижний отступ */
+     position: absolute; /* Добавили абсолютное позиционирование */
+     top: 30px;
+      right: 30px; /* Задали правый отступ */
+     }
+   .services-arrow {
+    /* display: none; Убрали скрытие стрелок */
+         width: 40px;
+      height: 40px;
+       border: none;
+         border-radius: 50%;
+       background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      }
+ .services-arrow:hover {
+     background-color: rgba(255, 255, 255, 0.2);
+     }
+   .services-arrow::before {
+       content: '';
+       position: absolute;
+      top: 50%;
+         left: 50%;
+       transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        }
+     .services-arrow-left::before {
+        transform: translate(-50%, -50%) rotate(-135deg);
+   }
+   .services-arrow-right::before {
+          transform: translate(-50%, -50%) rotate(45deg);
+     }
+  .services-all-button {
+     padding: 12px 20px;
+      background-color: #e67e22;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+      color: white;
+     transition: background-color 0.3s ease;
+         font-size: 1rem;
+   }
+  .services-all-button:hover {
+        background-color: #d35400;
+    }

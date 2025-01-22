@@ -41,8 +41,12 @@
                 <h2>Акции декабря</h2>
             </div>
             <div class="small-images">
-                <img src="assets/ButtonLeft.png" alt="Иконка 1">
-                <img src="assets/ButtonRight.png" alt="Иконка 2">
+                <button class="arrow-button left">
+                    <span class="arrow"></span>
+                </button>
+                <button class="arrow-button right">
+                    <span class="arrow"></span>
+                </button>
             </div>
             <div class="image-row">
                 <img src="assets/item.png" alt="Изображение 1" class="rounded-image">
@@ -110,6 +114,53 @@
             <div class="bottom-image">
                 <img src="assets/vector_2.png" alt="Изображение после сетки">
             </div>
+
+            <!-- Новое изображение на всю ширину с формой -->
+            <section class="full-width-image">
+                <img src="assets/form.png" alt="Фон формы" class="form-background">
+                <div class="form-content">
+                    <h2 class="form-title">Вызов врача на дом</h2>
+                    <p class="form-subtitle">Вашему питомцу требуется неотложная <br> помощь? Приедем в течение 40 минут!</p>
+                    <form class="form-fields">
+                        <input type="text" placeholder="ВАШЕ ИМЯ" class="form-input">
+                        <input type="tel" placeholder="ТЕЛЕФОН" class="form-input">
+                        <button type="submit" class="form-button">ОТПРАВИТЬ</button>
+                    </form>
+                    <p class="form-disclaimer">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+                </div>
+            </section>
+            
+            <section class="services-section">
+                <button class="services-button">Услуги</button>
+                <div class="services-header">
+                    <h2 class="services-title">Мы предоставляем <span class="services-title-sub">срочную качественную</span></h2>
+                    <h2 class="services-title-desc">медицинскую помощь вашим питомцам</h2>
+                </div>
+                <div class="services-cards">
+                  <div class="services-card">
+                      <img src="C:\Users\kokos\Desktop\Web\КР\кудряш.png" alt="Инструментальная диагностика" class="services-image">
+                      <h3 class="services-card-title">Инструментальная <br> диагностика</h3>
+                  </div>
+                  <div class="services-card">
+                      <img src="C:\Users\kokos\Desktop\Web\КР\леопард.png" alt="Лабораторные исследования" class="services-image">
+                      <h3 class="services-card-title">Лабораторные <br> исследования</h3>
+                  </div>
+                      <div class="services-card">
+                      <img src="C:\Users\kokos\Desktop\Web\КР\кроликсхвостом.png" alt="Хирургия" class="services-image">
+                      <h3 class="services-card-title">Хирургия</h3>
+                  </div>
+                      <div class="services-card">
+                      <img src="C:\Users\kokos\Desktop\Web\КР\зеленыйфон.png" alt="Терапия и профилактика" class="services-image">
+                      <h3 class="services-card-title">Терапия <br> и профилактика</h3>
+                  </div>
+                </div>
+               <div class="services-arrows">
+                <button class="services-arrow services-arrow-left"></button>
+                <button class="services-arrow services-arrow-right"></button>
+               </div>
+                <button class="services-all-button">Все услуги</button>
+              </section>
+
         </div>
     </section>
 </body>
