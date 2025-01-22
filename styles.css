@@ -839,3 +839,184 @@ header .contact-info p {
     font-family: var(--specialists-font, 'OnestBold1602-hint'), sans-serif;
     margin-bottom: 20px;
 }
+
+/* Стили для изображения */
+.specialists-image {
+    position: relative; /* Относительное позиционирование */
+    width: 100%; /* Занимает всю ширину блока */
+    width: 1500px; /* Максимальная ширина изображения */
+    z-index: 10;
+    margin-top: -50px; /* Отступ сверху */
+    margin-left: -20px; /* Отступ слева */
+}
+
+.specialists-image img {
+    width: 100%; /* Сохраняет оригинальный масштаб */
+    height: auto; /* Сохраняет пропорции */
+    display: block; /* Убирает лишние отступы */
+}
+
+/* Стили для блока с тремя горизонтальными изображениями */
+.horizontal-images-section {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 20; /* Новые изображения выше */
+    padding: -100px 0; /* Отступы сверху и снизу */
+    margin-top: -240px; /* Сдвигаем блок вверх, чтобы наезжал на 1_svg.png */
+}
+
+.horizontal-images-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Расстояние между изображениями */
+    width: 100%;
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+/* Уточнённые стили для новых изображений */
+.horizontal-images-container .horizontal-image {
+    width: 32%; /* Ширина каждого изображения (3 изображения на всю ширину) */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.horizontal-images-container .horizontal-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для .image-wrapper (оставляем без изменений) */
+.image-wrapper {
+    width: 24%;
+    height: 400px; /* Увеличиваем высоту */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполнение пространства */
+}
+
+/* Стили для нового изображения, закреплённого у правого края */
+.fixed-right-image {
+    position: absolute; /* Закрепляем изображение */
+    right: 10px; /* Отступ от правого края */
+    bottom: 1055px; /* Отступ от нижнего края */
+    z-index: 30; /* Убедимся, что изображение поверх других элементов */
+    width: 200px; /* Ширина изображения */
+    height: auto; /* Сохраняем пропорции */
+}
+
+.fixed-right-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для нового изображения на всю ширину */
+.full-width-image-section {
+    width: 98%; /* Занимает всю ширину страницы */
+    margin: 0 auto; /* Центрирование (если нужно) */
+    padding: 20px 0; /* Отступы сверху и снизу */
+    margin-top: 150px; /* Отступ сверху (настрой по своему усмотрению) */
+    position: relative; /* Для позиционирования внутри */
+    z-index: 10; /* Убедимся, что изображение в правильном слое */
+}
+
+.full-width-image-section img {
+    width: 100%; /* Занимает всю ширину родительского элемента */
+    height: auto; /* Сохраняет пропорции */
+    display: block; /* Убирает лишние отступы */
+    border-radius: 15px; /* Опционально: скругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Опционально: тень */
+}
+
+/* Стили для формы внутри нового изображения */
+.form-content-right {
+    position: absolute;
+    top: 50%; /* Позиционирование по вертикали */
+    right: 10%; /* Отступ от правого края */
+    transform: translateY(-50%); /* Точное центрирование */
+    background-color: transparent; /* Прозрачный фон */
+    padding: 20px; /* Отступы внутри формы */
+    max-width: 800px; /* Ширина формы */
+    text-align: left;
+}
+
+.form-content-right .form-title {
+    font-size: 65px;
+    color: #ffffff;
+    font-family: 'OnestBold1602-hint', sans-serif;
+    margin-bottom: 80px;
+    line-height: 1.2; /* Уменьшаем межстрочный интервал */
+}
+
+.form-content-right .form-title-now {
+    display: block; /* Переносим на новую строку */
+    font-size: 70px;
+    font-family: 'gogol_regular', sans-serif; /* Другой шрифт */
+    color: #ffffff; /* Оранжевый цвет */
+    margin-top: 5px; /* Отступ сверху */
+}
+
+.form-content-right .form-subtitle {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'OnestLight1602-hint', sans-serif;
+    margin-bottom: 60px;
+}
+
+.form-content-right .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Расстояние между элементами формы */
+}
+
+.form-content-right .form-input {
+    padding: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: var(--form-input-font, 'OnestRegular1602-hint', sans-serif);
+    background-color: transparent;
+    color: #ffffff;
+    height: 80px;
+}
+
+.form-content-right .form-input::placeholder {
+    color: #ffffff;
+}
+
+.form-content-right .form-button {
+    padding: 0;
+    background-color: #E7632A;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    font-family: var(--form-button-font, 'OnestMedium1602-hint', sans-serif);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content-right .form-button:hover {
+    background-color: #ff6a00;
+}
+
+.form-content-right .form-disclaimer {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'OnestLight1602-hint', sans-serif;
+    margin-top: 10px;
+    text-align: left;
+}
